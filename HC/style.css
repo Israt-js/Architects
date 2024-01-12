@@ -13,4 +13,23 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+.nav-title{
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #131313;
+}
 
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #242424;
+}
