@@ -21,6 +21,7 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 .nav-title{
     font-size: 1.9rem;
@@ -56,5 +57,41 @@ nav li a{
     color: #727272;
 }
 .img{
-    width: 700px;
+    width: 100%;
+    margin-top: 16px;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+}
+.team-content{
+    padding-left: 60px;
+    padding-right: 60px;   
+}
+.team-title{
+    font-size: 2rem;
+}
+.team-title .qu{
+    color: #727272;
+    font-weight: 500;
+}
+.fea{
+   color: #37cc37; 
+   font-weight: 700;
+}
+
+
+@media screen and (max-width: 576px) {
+    header{
+        padding: 15px;
+
+    }
+    nav{
+        flex-direction: column;
+    }
 }
