@@ -28,7 +28,8 @@ nav{
 }
 .nav-title,
 .f-h,
-.card-title{
+.card-title,
+.spo{
     font-size: 1.6rem;
     font-weight: 700;
     color: #131313;
@@ -79,6 +80,9 @@ main{
     padding-left: 60px;
     padding-right: 60px;   
 }
+.team-pj{
+    text-align: center;
+}
 .team-title{
     font-size: 2rem;
 }
@@ -95,6 +99,9 @@ main{
     display: flex;
     justify-content: space-around;
 }
+.f-h{
+    text-align: center;
+}
 .facts-card .card{
     border-radius: 8px;
     border: 1px solid #37cc37;
@@ -106,7 +113,59 @@ main{
     font-size: 1.9rem;
     color: #424242;
 }
+.Sponspors{
+    text-align: center;
+}
+.sponsors-img{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.sponsors-img img{
+    height: 50px;
+    width: 100px;
+    padding: 40px;
+    margin: 40px;
+}
+.foot-text{
+    background-color: #cde7a5;
+    height: 60px;
+    width: 800px;
+}
+.foot-text > p{
+    text-align: center;
+    margin-top: 15px;
+}
 
+.features{
+    margin-top: 50px;
+    display: flex;
+    gap: 90px;
+}
+.features .too{
+    border-left: 5px solid #37cc37;
+    padding-left: 30px;
+}
+.feature-content .card{
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.ten-year{
+    border-radius: 8px;
+    background: #37cc37;
+    color: #FFF;
+    text-align: center;
+    width: 160px;
+    padding: 20px;
+    position: relative;
+    bottom: 90px;
+}
+.ten-year h2{
+    font-size: 3rem;
+}
 
 @media screen and (max-width: 576px) {
     header{
@@ -121,8 +180,50 @@ main{
         grid-template-columns: repeat(1, 1fr);
         gap: 17px;
     }
+    .facts-card{
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .teams-container{
         flex-direction: column;
         align-items: center;
     }
+    .sponsors-img img{
+        flex-direction: column;
+    }
+    
+    .ic{
+        height: 90%;
+        width: 100%;
+    }
+.features{
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
 }
+.features .too{
+    border-left: 3px solid #37cc37;
+    padding-left: 10px;
+}
+.feature-content .card{
+    padding: 10px;
+    margin-bottom: 7px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.ten-year{
+    border-radius: 8px;
+    background: #37cc37;
+    color: #FFF;
+    text-align: center;
+    width: 90px;
+    padding: 20px;
+}
+
+.ten-year h2{
+    font-size: 1rem;
+}
+
+}
+
